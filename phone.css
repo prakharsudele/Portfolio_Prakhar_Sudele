@@ -1,0 +1,31 @@
+@media screen and (max-width:991px) {
+   .navbar{
+    display: none;
+   }
+
+   .home-content{
+    margin-left: 5rem ;
+   }
+
+   .home-img img
+   {
+    margin-right: 25rem;
+   }
+   
+   .about{
+    height: auto;
+   }
+   .about-content
+   {
+       flex-direction: column;
+       justify-content: center;
+       margin: auto;
+   }
+
+   .project-content
+   {
+    flex-direction: column;
+    margin: auto;
+   }
+
+}
