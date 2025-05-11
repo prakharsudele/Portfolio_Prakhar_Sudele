@@ -7,7 +7,7 @@ const projectData = [
     description: "Portfolio website for Web-Developer Club which showcases their projects and Team Members with smooth animations.",
     image: "/sentify_preview.jpg",
     github: "https://github.com/yourusername/sentify",
-    video: "/nexura_vid.mp4", // optional
+    video: `${import.meta.env.BASE_URL}nexura_vid.mp4`, // optional
   },
 
   {
@@ -15,13 +15,13 @@ const projectData = [
   description: "Online food ordering website which allows users to login/register, view food items, and add them to their cart for checkout.",
   image: "/studybuddy_preview.jpg",
   github: "https://github.com/prakharsudele/FoodBook",
-  video: "/foodbook_vid.mp4", // ✅ correct usage
+  video: `${import.meta.env.BASE_URL}foodbook_vid.mp4`, // ✅ correct usage
 },
 
   {
     title: "Nike",
     description: "Nike shoe brand homepage clone with clean and responsive design.",
-    image: "/nike_img.png",
+    image: `${import.meta.env.BASE_URL}nike_img.png`,
     github: "https://github.com/prakharsudele/Nike_Store",
     video: "", // if no video, fallback to image
   },
@@ -31,7 +31,7 @@ const projectData = [
     description: "Clone of UIT RGPV (my college) website but with a modern design and better interface.",
     image: "/studybuddy_preview.jpg",
     github: "https://github.com/prakharsudele/uit_clone",
-    video: "/uit_clone_vid.mp4", // if no video, fallback to image
+    video: `${import.meta.env.BASE_URL}uit_clone_vid.mp4`, // if no video, fallback to image
   },
 ];
 
