@@ -36,17 +36,17 @@ export default function Home() {
             <div className="flip-card-inner">
               <div className="flip-card-front">
                 <img
-                  src="/homepage_img.jpg"
-                  alt="Front Image"
+                 src={`${import.meta.env.BASE_URL}homepage_img.jpg`}
+                 alt="Front Image"
                   className="homepage-img homepage-img-medium"
                 />
               </div>
               <div className="flip-card-back">
                 <img
-                  src="/home-img.jpg"
-                  alt="Back Image"
-                  className="homepage-img homepage-img-medium"
-                />
+  src={`${import.meta.env.BASE_URL}home-img.jpg`}
+  alt="Back Image"
+  className="homepage-img homepage-img-medium"
+/>
               </div>
             </div>
           </div>
