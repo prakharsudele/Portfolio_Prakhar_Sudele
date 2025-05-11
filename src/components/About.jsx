@@ -9,7 +9,7 @@ export default function About() {
     {/* Image with slide+fade from left */}
     <div className="about-image" data-aos="fade-right">
     <div className="about-image hover-overlay">
-  <img src={`${import.meta.env.BASE_URL}about_img.jpg`} alt="About Me" />
+  <img  className="about-img" src={`${import.meta.env.BASE_URL}about_img.jpg`} alt="About Me" />
   <div className="overlay-text">
   “Debugging life, one semicolon at a time.”
   </div>

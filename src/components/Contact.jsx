@@ -14,7 +14,7 @@ export default function Contact() {
           </p>
 
           <div className="contact-boy-wrapper" data-aos="fade-up">
-            <img src={`${import.meta.env.BASE_URL}contact_img.png`} alt="3D Boy" />
+            <img className="contact-boy" src={`${import.meta.env.BASE_URL}contact_img.png`} alt="3D Boy" />
           </div>
         </div>
 
