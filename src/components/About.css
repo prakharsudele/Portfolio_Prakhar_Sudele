@@ -1,0 +1,144 @@
+.about-section {
+    background: linear-gradient(to bottom right, #1e1e2f, #2a0a3d, #141e30);
+    color: white;
+    padding: 5rem 2rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 96rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media (min-width: 768px) {
+    .about-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  
+  .about-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 0 25px rgba(255, 0, 255, 0.3);
+    margin: auto;
+  }  
+
+  .about-image {
+    display: flex;
+    justify-content: center;
+  }
+  
+
+  @media (min-width: 768px) {
+    .about-img {
+      max-width: 400px;
+    }
+  }
+
+  /* Container for image and overlay */
+.hover-overlay {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Image dims on hover */
+  .hover-overlay img {
+    transition: 0.3s ease-in-out;
+  }
+  
+  .hover-overlay:hover img {
+    filter: brightness(50%);
+  }
+  
+  /* Overlay text */
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+  }
+  
+  /* Show text on hover */
+  .hover-overlay:hover .overlay-text {
+    opacity: 1;
+  }
+  
+  
+  
+  .about-title {
+    font-size: 2.5rem;
+    color: #ff4b91;
+    margin-bottom: 1rem;
+  }
+  
+  .about-description {
+    font-size: 1.1rem;
+    color: #cbd5e1;
+    line-height: 1.7;
+  }
+  
+  /* Reuse your animations */
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-left {
+    animation: slideInLeft 1s ease-out forwards;
+  }
+  
+  .animate-right {
+    animation: slideInRight 1s ease-out forwards;
+  }
+  
+  .resume-btn {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #ff4b91;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .resume-btn:hover {
+    background-color: #ff76aa;
+  }
+  
